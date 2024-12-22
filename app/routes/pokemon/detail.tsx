@@ -78,7 +78,7 @@ const Page = ({ loaderData: { data } }: Route.ComponentProps) => {
                             <p className='section-heading'>Stats</p>
                             <ul className='pl-4'>
                                 {data.stats.map((item) => (
-                                    <li className='flex flex-col'>
+                                    <li key={item.stat.name} className='flex flex-col'>
                                         <p className='capitalize flex items-center gap-4 mb-4'>
                                             {item.stat.name}{" "}
                                             <span className='cardInfo-page'>{item.base_stat}</span>
