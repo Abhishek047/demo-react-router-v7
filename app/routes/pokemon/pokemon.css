@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dataInfo {
+    @apply flex flex-col gap-1 items-center justify-center;
+}
+.cardInfo {
+    @apply font-semibold text-sm;
+}
+.cardInfo-name {
+    @apply text-xs;
+}
+.dataInfo-page {
+    @apply flex flex-col gap-1 items-center justify-center;
+}
+.cardInfo-page {
+    @apply font-semibold text-lg;
+}
+.cardInfo-name-page {
+    @apply text-sm;
+}
+.section-heading {
+    @apply text-xl font-semibold text-zinc-200 mb-[1em];
+}

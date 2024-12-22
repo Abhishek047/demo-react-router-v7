@@ -9,7 +9,7 @@ const links = [
         path: ROUTE_PATHS.HOME,
     },
     {
-        label: "POKEMON",
+        label: "Pokemon",
         path: ROUTE_PATHS.POKEMON,
     },
     {
