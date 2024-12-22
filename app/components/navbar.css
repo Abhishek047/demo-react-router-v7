@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-link {
+    @apply block md:px-4;
+}
+
+.active {
+    @apply text-cyan-500;
+}
