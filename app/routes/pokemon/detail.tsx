@@ -34,7 +34,9 @@ const Page = ({ loaderData: { data } }: Route.ComponentProps) => {
                             {Object.values(data.sprites)
                                 .filter((url) => !!url && typeof url === "string")
                                 .map((url) => (
-                                    <div className='p-4 border-indigo-200 border-[1px] cursor-pointer rounded-md'>
+                                    <div
+                                        key={url as unknown as string}
+                                        className='p-4 border-indigo-200 border-[1px] cursor-pointer rounded-md'>
                                         <img src={url as unknown as string} alt='' />
                                     </div>
                                 ))}
